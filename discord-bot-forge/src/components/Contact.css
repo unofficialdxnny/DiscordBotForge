@@ -1,0 +1,22 @@
+#contact {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 2rem;
+    margin: 0 1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #7289da;
+    transform: scale(1.1);
+}

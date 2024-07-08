@@ -1,12 +1,23 @@
-// src/App.js
 import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Pricing from './components/Pricing';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
-import MainSection from './Main';
 
 function App() {
   return (
     <div className="App">
-      <MainSection />
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <Pricing />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }

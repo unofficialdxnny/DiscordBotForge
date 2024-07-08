@@ -1,0 +1,96 @@
+/* Header.css */
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 1.5rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li button {
+    background: #7289da;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        padding: 0 1rem;
+        /* Adjusted padding for smaller screens */
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+
+    header .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        /* Added margin to separate menu items */
+    }
+
+    header .nav-list.active {
+        display: flex;
+    }
+
+    header ul li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    header ul li:first-child {
+        margin-top: 1rem;
+        /* Separate the first menu item from the logo */
+    }
+
+    header ul li a,
+    header ul li button {
+        padding: 1rem;
+        /* Increase padding for touch-friendly tap area */
+        width: 100%;
+        /* Full width for mobile menu items */
+    }
+
+    header ul li button {
+        margin-top: 1rem;
+        /* Separate login button from other items */
+    }
+}

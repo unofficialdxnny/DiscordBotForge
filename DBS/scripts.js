@@ -1,3 +1,4 @@
+console.log('updated')
 document.getElementById('login-button').addEventListener('click', () => {
     const clientId = '1259357668527837184';
     const redirectUri = encodeURIComponent('https://unofficialdxnny.github.io/DiscordBotForge/DBS/create.html');

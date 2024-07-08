@@ -1,6 +1,6 @@
 document.getElementById('login-button').addEventListener('click', () => {
     const clientId = '1259357668527837184';
-    const redirectUri = encodeURIComponent('http://127.0.0.1:5500/DBS/create.html');
+    const redirectUri = encodeURIComponent('https://unofficialdxnny.github.io/DiscordBotForge/DBS/create.html');
     const scopes = encodeURIComponent('identify email guilds');
     const discordAuthUrl = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=${scopes}`;
     window.location.href = discordAuthUrl;
@@ -22,7 +22,7 @@ async function getUserInfo() {
     if (code) {
         const clientId = '1259357668527837184';
         const clientSecret = '2KyBEcTBLaXLP1TqicwWojR4VN07Fiyp';
-        const redirectUri = 'http://127.0.0.1:5500/DBS/create.html';
+        const redirectUri = 'https://unofficialdxnny.github.io/DiscordBotForge/DBS/create.html';
 
         const tokenResponse = await fetch('https://discord.com/api/oauth2/token', {
             method: 'POST',
